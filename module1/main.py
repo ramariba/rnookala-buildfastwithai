@@ -9,7 +9,7 @@ os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # Create prompt template for generating tweets
 
-tweet_template = "Give me {number} jokes on {topic} in {language} language"
+tweet_template = "Give me {number} tweets on {topic} in {language} language"
 
 tweet_prompt = PromptTemplate(template = tweet_template, input_variables = ['number', 'topic', 'language'])
 
@@ -23,9 +23,9 @@ tweet_chain = tweet_prompt | gemini_model
 
 import streamlit as st
 
-st.header("🐦 Ramesh Nookala - Joke Generator")
+st.header("🐦 Ramesh Nookala - Tweet Generator")
 
-st.subheader("Generate Jokes using Generative AI 🤖")
+st.subheader("Generate Tweets using Generative AI 🤖")
 
 topic = st.text_input("Topic")
 
