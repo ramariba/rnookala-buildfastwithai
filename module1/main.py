@@ -25,7 +25,7 @@ import streamlit as st
 
 st.header("🐦 Ramesh Nookala - Tweet Generator")
 
-st.subheader("Generate Tweets using Generative AI 🤖")
+st.subheader("Generate Tweets in 3 languages using Generative AI 🤖")
 
 topic = st.text_input("Topic")
 
